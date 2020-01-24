@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/personal_area"
+            android:icon="@drawable/ic_menu_personal_area"
+            android:title="@string/menu_personal_area" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/ic_menu_make_an_appointment"
+            android:title="@string/menu_make_an_appointment" />
+        <item
+            android:id="@+id/nav_question"
+            android:icon="@drawable/ic_menu_question"
+            android:title="@string/menu_question" />
+        <item
+            android:id="@+id/nav_price"
+            android:icon="@drawable/ic_menu_price"
+            android:title="@string/menu_price" />
+        <item
+            android:id="@+id/nav_route"
+            android:icon="@drawable/ic_menu_route"
+            android:title="@string/menu_route" />
+        <item
+            android:id="@+id/nav_about_company"
+            android:icon="@drawable/ic_menu_about_company"
+            android:title="@string/menu_about_company" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

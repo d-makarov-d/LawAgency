@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LawAgency</string>
+    <string name="title_activity_main_client">MainClientActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_make_an_appointment">Записаться</string>
+    <string name="menu_question">Задать вопрос</string>
+    <string name="menu_personal_area">Личный кабинет</string>
+    <string name="menu_price">Цены на услуги</string>
+    <string name="menu_route">Как добраться</string>
+    <string name="menu_about_company">О компании</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+</resources>
