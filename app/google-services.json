@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "966148481580",
+    "firebase_url": "https://lawagency-7b053.firebaseio.com",
+    "project_id": "lawagency-7b053",
+    "storage_bucket": "lawagency-7b053.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966148481580:android:ca335ab891b35d85cae789",
+        "android_client_info": {
+          "package_name": "com.example.lawagency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966148481580-a6eoiqhfhefoqn380h85hcbjr6b48ge4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lawagency",
+            "certificate_hash": "4b23e2253bf67fc520373c88a74d22afc66c2ba1"
+          }
+        },
+        {
+          "client_id": "966148481580-gnpp9tcb3k4kq05u7cf015c51c3qrnf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8JDOdGCh-knJt9P58A-cuVVB9DbLDu_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966148481580-gnpp9tcb3k4kq05u7cf015c51c3qrnf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
