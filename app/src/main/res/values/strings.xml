@@ -16,6 +16,7 @@
     <string name="menu_about_company">О компании</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="menu_specialists">Specialists</string>
 
     <string name="button_personal_data">Личные данные</string>
     <string name="button_my_visits">Мои посещения</string>

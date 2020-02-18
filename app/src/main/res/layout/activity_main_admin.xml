@@ -3,24 +3,24 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout_client"
+    android:id="@+id/drawer_layout_admin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <include
-        layout="@layout/app_bar_main_client"
+        layout="@layout/app_bar_main_admin"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view_client"
+        android:id="@+id/nav_view_admin"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main_client"
-        app:menu="@menu/activity_main_client_drawer" />
+        app:headerLayout="@layout/nav_header_main_admin"
+        app:menu="@menu/activity_main_admin_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

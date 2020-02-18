@@ -5,7 +5,6 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import android.util.Log;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -23,7 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
 
-public class MainClientActivity extends AppCompatActivity {
+public class MainAdminActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -31,12 +30,10 @@ public class MainClientActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_client);
-        Log.e("1", "create layoyt");
-        Toolbar toolbar = findViewById(R.id.toolbar_client);
+        setContentView(R.layout.activity_main_admin);
+        Toolbar toolbar = findViewById(R.id.toolbar_admin);
         setSupportActionBar(toolbar);
-        Log.e("1", "create toolbar");
-        FloatingActionButton fab = findViewById(R.id.fab_client);
+        FloatingActionButton fab = findViewById(R.id.fab_admin);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,20 +41,17 @@ public class MainClientActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        DrawerLayout drawer = findViewById(R.id.drawer_layout_client);
-        NavigationView navigationView = findViewById(R.id.nav_view_client);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout_admin);
+        NavigationView navigationView = findViewById(R.id.nav_view_admin);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.personal_area, R.id.nav_appointment, R.id.nav_question, R.id.nav_price, R.id.nav_route,
-                R.id.nav_about_company, R.id.nav_share, R.id.nav_send)
+        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_services,
+                R.id.nav_specialists, R.id.nav_share_admin, R.id.nav_send_admin)
                 .setDrawerLayout(drawer)
                 .build();
-        Log.e("1", "create drawer and nav");
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_client);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_admin);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        Log.e("1", "end");
     }
 
     @Override
@@ -69,7 +63,7 @@ public class MainClientActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_client);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_admin);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
